@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Category Form</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<script>
+	$(document). ready(function(){
+		$('.crice1').change(function() {
+		    $('.rice1').attr('disabled',!this.checked)
+		});
+		
+		$('.crice2').change(function() {
+		    $('.rice2').attr('disabled',!this.checked)
+		});$('.crice2').change(function() {
+		    $('.rice2').attr('disabled',!this.checked)
+		});
+		
+		$('.cpulse1').change(function() {
+		    $('.pulse1').attr('disabled',!this.checked)
+		});
+		
+		$('.cpulse2').change(function() {
+		    $('.pulse2').attr('disabled',!this.checked)
+		});
+		$('.csoap1').change(function() {
+		    $('.soap1').attr('disabled',!this.checked)
+		});
+		$('.csoap2').change(function() {
+		    $('.soap2').attr('disabled',!this.checked)
+		});
+		
+		$('.cpaper1').change(function() {
+		    $('.paper1').attr('disabled',!this.checked)
+		});
+		$('.cpaper1').change(function() {
+		    $('.paper2').attr('disabled',!this.checked)
+		});
+		
+		$('.cpaper2').change(function() {
+		    $('.paper2').attr('disabled',!this.checked)
+		});
+		
+		$('.coil').change(function() {
+		    $('.oil').attr('disabled',!this.checked)
+		});
+		$('.csalt').change(function() {
+		    $('.salt').attr('disabled',!this.checked)
+		});
+		$('.csugar').change(function() {
+		    $('.sugar').attr('disabled',!this.checked)
+		});
+		
+		$('.cfreshner').change(function() {
+		    $('.freshner').attr('disabled',!this.checked)
+		});
+		
+		$('.codonil').change(function() {
+		    $('.odonil').attr('disabled',!this.checked)
+		});
+		
+		$('.charpic').change(function() {
+		    $('.harpic').attr('disabled',!this.checked)
+		});
+		
+		$('.cflour').change(function() {
+		    $('.flour').attr('disabled',!this.checked)
+		});
+		
+		$('.ctea').change(function() {
+		    $('.tea').attr('disabled',!this.checked)
+		});
+		
+		$('.ccoffee').change(function() {
+		    $('.coffee').attr('disabled',!this.checked)
+		});
+		$('.chandwash').change(function() {
+		    $('.handwash').attr('disabled',!this.checked)
+		});
+		$('.cshampoo').change(function() {
+		    $('.shampoo').attr('disabled',!this.checked)
+		});
+		
+	$(".r1col1").hide();
+	$(".r1col2").hide();
+	$(".hitem1").hide();
+	$(".hitem2").hide();
+	$(".oitem1").hide();
+	$(".oitem2").hide();
+	$('.id1').click(function(){
+		if($(this).prop("checked") == true){
+			$(".r1col1").show('slow');
+		}
+		else if($(this).prop("checked") == false){
+			$(".r1col1").hide('slow');
+		}
+	});
+	$('.id2').click(function(){
+		if($(this).prop("checked") == true){
+			$(".r1col2").show('slow');
+		}
+		else if($(this).prop("checked") == false){
+			$(".r1col2").hide('slow');
+		}
+	});
+	$('.hcheck1').click(function(){
+		if($(this).prop("checked") == true){
+			$(".hitem1").show('slow');
+		}
+		else if($(this).prop("checked") == false){
+			$(".hitem1").hide('slow');
+		}
+	});
+	$('.hcheck2').click(function(){
+		if($(this).prop("checked") == true){
+			$(".hitem2").show('slow');
+		}
+		else if($(this).prop("checked") == false){
+			$(".hitem2").hide('slow');
+		}
+	});
+	$('.ocheck1').click(function(){
+		if($(this).prop("checked") == true){
+			$(".oitem1").show('slow');
+		}
+		else if($(this).prop("checked") == false){
+			$(".oitem1").hide('slow');
+		}
+	});
+	$('.ocheck2').click(function(){
+		if($(this).prop("checked") == true){
+			$(".oitem2").show('slow');
+		}
+		else if($(this).prop("checked") == false){
+			$(".oitem2").hide('slow');
+		}
+	});
+
+});
+	</script>
+</head>
+<body>
+	<nav class="green lighten-2">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Logo</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="">Link1</a></li>
+				<li><a href="">Link2</a></li>
+				<li><a href="">Link3</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h4 class="amber">Please Choose Category/categories to Purchase...</h4>
+		<form action="">
+			<p class="">
+				<label>
+					<input type="checkbox" class="id1" />
+					<span class="">House Hold Items</span>
+					</label>
+				</p>
+				<p class="">
+					<label>
+						<input type="checkbox" class="id2"/>
+						<span class="">Official Items</span>
+					</label>
+				</p>
+			</form>
+		</div>
+
+
+<form action="Next.jsp">
+		<!-- second category items -->
+		<div class="container  cntnr1">
+			<div class="row r1">
+				<div class="col s12 l6 r1col1">
+					<h4 class=" amber">Household Items :-</h4>
+					<p class="">
+						<label>
+							<input type="checkbox" class="hcheck1" />
+							<span>Kitchen Items</span>
+						</label>
+						<span class="d">Quantity</span>
+					</p>
+
+					<div class="hitem1">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in crice1"/>
+								<span class="spanfont">Rice</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="rice1" class="rice1" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cpulse1"/>
+								<span class="spanfont">Pulses</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="pulse1" class="pulse1" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in coil" />
+								<span class="spanfont">Oil</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="oil" class="oil" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in csalt"/>
+								<span class="spanfont">Salt</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="salt" class="salt" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in csugar"/>
+								<span class="spanfont">Sugar</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="sugar" class="sugar" id="in">
+							</label>
+						</p>
+					</div>
+
+					<p class="">
+						<label>
+							<input type="checkbox" class="hcheck2" />
+							<span>Washroom Items</span>
+						</label>
+						<span class="d">Quantity</span>
+					</p>
+					<div class="hitem2">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in csoap1" />
+								<span class="spanfont">Soap</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="soap1" class="soap1" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cpaper1"/>
+								<span class="spanfont">Paper</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="paper1" class="paper1" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cfreshner"/>
+								<span class="spanfont">Freshner</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="freshner" class="freshner" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in codonil"/>
+								<span class="spanfont">Odonil</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="odonil" class="odonil" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in charpic"/>
+								<span class="spanfont">Harpic</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="harpic" class="harpic" id="in">
+							</label>
+						</p>
+					</div>
+				</div>
+
+				<div class="col l6 s12 r1col2">
+					<h4 class="amber">Official Items :-</h4>
+					<p class="">
+						<label>
+							<input type="checkbox" class="ocheck1" />
+							<span>Canteen Items</span>
+						</label>
+						<span class="d">Quantity</span>
+					</p>
+					<div class="oitem1">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in crice2"/>
+								<span class="spanfont">Rice</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="rice2" class="rice2" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cpulse2"/>
+								<span class="spanfont">Pulses</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="pulse2" class="pulse2" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cflour"/>
+								<span class="spanfont">Flour</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="flour" class="flour" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in ctea"/>
+								<span class="spanfont">Tea</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="tea" class="tea" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in ccoffee"/>
+								<span class="spanfont">Coffee</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="coffee" class="coffee" id="in">
+							</label>
+						</p>
+					</div>
+					<p class="">
+						<label>
+							<input type="checkbox" class="ocheck2" />
+							<span>Washroom Items</span>
+						</label>
+						<span class="d">Quantity</span>
+					</p>
+					<div class="oitem2">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in csoap2"/>
+								<span class="spanfont">Soap</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="soap2" class="soap2" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cpaper2"/>
+								<span class="spanfont">Paper</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="paper2" class="paper2" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in chandwash"/>
+								<span class="spanfont">Handwash</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="handwash" class="handwash" id="in">
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in cshampoo"/>
+								<span class="spanfont">Shampoo</span>
+							</label>
+							<label for="in">
+							<input disabled type="number" name="shampoo" class="shampoo" id="in">
+							</label>
+						</p>
+						<p>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nextbtn">
+		<input type="submit" class="btn" Value="NEXT>">
+	</div>
+		</form>
+	
+
+
+	</body>
+</html>

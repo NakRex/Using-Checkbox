@@ -1,0 +1,75 @@
+body {
+	background-color:#ecefde;
+}
+[type="checkbox"] + span:not(.lever) {
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+	}
+	.a {
+		background-color: blue;
+	}
+.cntnr1 {
+	width: 90%;
+}
+.d {
+	display: inline-block;
+	float: right;
+	font-size: 25px;
+	font-weight: bold;
+}
+.hitem1, .hitem2, .oitem1, .oitem2 {
+	padding-left: 50px;
+}
+
+input[type=number]:not(.browser-default)
+{
+	background-color: aliceblue;
+    height: 2rem;
+    width: 60px;
+    font-size: 17px;
+    margin: auto;
+    padding: 0;
+    float: right;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+.spanfont, td {
+	font-size: 18px ! important;
+	font-weight: bold;
+	color: black;
+
+}
+.nextbtn {
+	text-align: center;
+}
+.btn {
+	display: inline-block;
+	height: 40px;
+	width: 105px;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.orderbtn
+{
+	display: inline-block;
+	height: 40px;
+	width: 180px;
+	font-size: 22px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.e {
+	font-size: 25px;
+	font-weight: bold;
+	color : black;
+}
+ .pulse::before {
+ content: none !important;
+ }
+ th {
+ font-size: 25px;
+ }
